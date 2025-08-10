@@ -23,7 +23,7 @@ const CourseDetails = () => {
 
     useEffect(() => {
         fetchCourseData();
-    }, []);
+    }, [allCourses]);
 
     const toggleSection = (index) => {
         setOpenSections((prev) => (
@@ -107,7 +107,7 @@ const CourseDetails = () => {
                             <Youtube videoId={ playerData.videoId } opts={{playerVars: { autoplay:1 }}} iframeClassName='w-full aspect-video' />
                             : <img src={courseData.courseThumbnail} alt="" />
                         }
-                        
+
                         <div className='p-5'>
                             <div className='flex items-center gap-2'>
                                 <img className='w-3.5' src={assets.time_left_clock_icon} alt="time left clock icon" />
