@@ -109,7 +109,7 @@ export const AppContextProvider = (props) => {
 
         try {
             const token = await getToken();
-            const { data } = await axios.get(backendUrl + '/api/user/enrolled-courses', { headers: { Authorization: `Bearer ${token}` } });
+            const { data } = await axios.get(backendUrl + '/api/user/enrolled-courses', { headers: { Authorization: `Bearer ${token}` }});
 
             if (data.success) {
                 setEnrolledCourses(data.enrolledCourses.reverse());
@@ -139,7 +139,7 @@ export const AppContextProvider = (props) => {
 
     const value = {
         // Add shared state or functions here
-        currency, allCourses, navigate, calculateRating, isEducator, calculateChapterTime, calculateCourseDuration, calculateNoOfLectures, enrolledCourses, fetchUserEnrolledCourses, backendUrl, userData, setUserData, getToken, fetchAllCourses
+        currency, allCourses, navigate, calculateRating, isEducator, calculateChapterTime, calculateCourseDuration, calculateNoOfLectures, enrolledCourses, fetchUserEnrolledCourses, backendUrl, userData, setUserData, getToken, fetchAllCourses, setIsEducator
     }
 
     return (
