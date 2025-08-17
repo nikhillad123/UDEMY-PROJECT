@@ -123,7 +123,7 @@ export const AppContextProvider = (props) => {
 
     useEffect(() => {
         fetchAllCourses();
-        fetchUserEnrolledCourses();
+        // fetchUserEnrolledCourses();
     }, []);
 
     // const logToken = async () => {
@@ -134,6 +134,7 @@ export const AppContextProvider = (props) => {
         if (user) {
             // logToken();
             fetchUserData();
+            fetchUserEnrolledCourses();
         }
     }, [user]);
 
