@@ -1,11 +1,5 @@
 
-<div align="center">
-  
-![favicon](https://github.com/user-attachments/assets/ba86af86-a98e-4842-9cc4-5871c5ef234b)
-
-</div>
-
-# Edemy LMS 🎓 - A Modern Learning Management System
+# Edemy LMS - A Modern Learning Management System
 
 
 Edemy LMS is a full-stack learning management system (LMS) that provides educators and students with a seamless e-learning experience. Built using modern web technologies, it includes user authentication, course management, video streaming, and progress tracking.
@@ -16,7 +10,6 @@ Edemy LMS is a full-stack learning management system (LMS) that provides educato
 - **React** (via Vite) ⚡
 - **React Router DOM** for navigation
 - **React Toastify** for notifications
-- **Framer Motion** for animations
 - **Quill** for rich text editing
 - **Axios** for API requests
 - **RC Progress** for progress tracking
@@ -36,73 +29,135 @@ Edemy LMS is a full-stack learning management system (LMS) that provides educato
 ---
 
 ## 📂 Project Structure
-
-### **Frontend (`client/`)**
 ```
-📦 client
- ├── 📂 src
- │   ├── 📂 assets
- │   ├── 📂 components
- │   │   ├── 📂 educator
- │   │   │   ├── Footer.jsx
- │   │   │   ├── Navbar.jsx
- │   │   │   ├── Sidebar.jsx
- │   │   ├── 📂 student
- │   │   │   ├── Logger.jsx
- │   ├── 📂 context
- │   │   ├── AppContext.jsx
- │   ├── 📂 pages
- │   │   ├── 📂 educator
- │   │   │   ├── AddCourse.jsx
- │   │   │   ├── Dashboard.jsx
- │   │   │   ├── Educator.jsx
- │   │   │   ├── MyCourses.jsx
- │   │   │   ├── StudentsEnrolled.jsx
- │   │   ├── 📂 student
- │   │   │   ├── CourseDetails.jsx
- │   │   │   ├── CoursesList.jsx
- │   │   │   ├── Home.jsx
- │   │   │   ├── MyEnrollMents.jsx
- │   │   │   ├── Player.jsx
- │   │   ├── App.jsx
- │   │   ├── index.css
- │   │   ├── main.jsx
- ├── 📜 .env
- ├── 📜 .gitignore
- ├── 📜 package.json
- ├── 📜 tailwind.config.js
- ├── 📜 vite.config.js
+├── README.md
+├── educrave-project
+    ├── .gitignore
+    ├── README.md
+    ├── educrave-project.lnk
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.js
+    ├── public
+    │   └── favicon.svg
+    ├── src
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── assets
+    │   │   ├── accenture_logo.svg
+    │   │   ├── add_icon.svg
+    │   │   ├── adobe_logo.svg
+    │   │   ├── appointments_icon.svg
+    │   │   ├── arrow_icon.svg
+    │   │   ├── assets.js
+    │   │   ├── blue_tick_icon.svg
+    │   │   ├── course_1.png
+    │   │   ├── course_2.png
+    │   │   ├── course_3.png
+    │   │   ├── course_4.png
+    │   │   ├── cross_icon.svg
+    │   │   ├── down_arrow_icon.svg
+    │   │   ├── dropdown_icon.svg
+    │   │   ├── earning_icon.svg
+    │   │   ├── facebook_icon.svg
+    │   │   ├── favicon.svg
+    │   │   ├── file_upload_icon.svg
+    │   │   ├── home_icon.svg
+    │   │   ├── instagram_icon.svg
+    │   │   ├── lesson_icon.svg
+    │   │   ├── logo.svg
+    │   │   ├── logo_dark.svg
+    │   │   ├── microsoft_logo.svg
+    │   │   ├── my_course_icon.svg
+    │   │   ├── patients_icon.svg
+    │   │   ├── paypal_logo.svg
+    │   │   ├── person_tick_icon.svg
+    │   │   ├── play_icon.svg
+    │   │   ├── profile_img.png
+    │   │   ├── profile_img2.png
+    │   │   ├── profile_img3.png
+    │   │   ├── profile_img_1.png
+    │   │   ├── profile_img_2.png
+    │   │   ├── profile_img_3.png
+    │   │   ├── rating_star.svg
+    │   │   ├── react.svg
+    │   │   ├── rich-text-css.txt
+    │   │   ├── search_icon.svg
+    │   │   ├── sktech.svg
+    │   │   ├── star_dull_icon.svg
+    │   │   ├── time_clock_icon.svg
+    │   │   ├── time_left_clock_icon.svg
+    │   │   ├── twitter_icon.svg
+    │   │   ├── upload_area.svg
+    │   │   ├── user_icon.svg
+    │   │   ├── user_icon_2.svg
+    │   │   └── walmart_logo.svg
+    │   ├── components
+    │   │   ├── educator
+    │   │   │   ├── Footer.jsx
+    │   │   │   ├── Navbar.jsx
+    │   │   │   └── Sidebar.jsx
+    │   │   └── student
+    │   │   │   ├── CallToAction.jsx
+    │   │   │   ├── Companies.jsx
+    │   │   │   ├── CourseCard.jsx
+    │   │   │   ├── CoursesSection.jsx
+    │   │   │   ├── Footer.jsx
+    │   │   │   ├── Hero.jsx
+    │   │   │   ├── Loading.jsx
+    │   │   │   ├── Navbar.jsx
+    │   │   │   ├── Rating.jsx
+    │   │   │   ├── SearchBar.jsx
+    │   │   │   └── TestimonialSection.jsx
+    │   ├── context
+    │   │   └── AppContext.jsx
+    │   ├── index.css
+    │   ├── main.jsx
+    │   └── pages
+    │   │   ├── educator
+    │   │       ├── AddCourse.jsx
+    │   │       ├── Dashboard.jsx
+    │   │       ├── Educator.jsx
+    │   │       ├── MyCourses.jsx
+    │   │       └── StudentsEnrolled.jsx
+    │   │   └── student
+    │   │       ├── CourseDetails.jsx
+    │   │       ├── CoursesList.jsx
+    │   │       ├── Home.jsx
+    │   │       ├── MyEnrollments.jsx
+    │   │       └── Player.jsx
+    ├── tailwind.config.js
+    ├── vercel.json
+    └── vite.config.js
+└── server
+    ├── .gitignore
+    ├── configs
+        ├── cloudinary.js
+        ├── mongodb.js
+        └── multer.js
+    ├── controllers
+        ├── courseController.js
+        ├── educatorController.js
+        ├── userController.js
+        └── webhooks.js
+    ├── middlewares
+        └── authMiddleware.js
+    ├── models
+        ├── Course.js
+        ├── CourseProgress.js
+        ├── Purchase.js
+        └── User.js
+    ├── package-lock.json
+    ├── package.json
+    ├── routes
+        ├── courseRoutes.js
+        ├── educatorRoutes.js
+        └── userRoutes.js
+    ├── server.js
+    └── vercel.json
 
-```
-
-### **Backend (`server/`)**
-```
-📦 server
- ├── 📂 configs
- │   ├── cloudinary.js
- │   ├── mongodb.js
- │   ├── multer.js
- ├── 📂 controllers
- │   ├── courseController.js
- │   ├── educatorController.js
- │   ├── userController.js
- │   ├── webhooks.js
- ├── 📂 middlewares
- │   ├── authMiddleware.js
- ├── 📂 models
- │   ├── Course.js
- │   ├── CourseProgress.js
- │   ├── Purchase.js
- │   ├── User.js
- ├── 📂 routes
- │   ├── courseRoute.js
- │   ├── educatorRoutes.js
- │   ├── userRoutes.js
- ├── 📜 .env
- ├── 📜 .gitignore
- ├── 📜 package.json
- ├── 📜 server.js
- ├── 📜 vercel.json
 ```
 
 ---
@@ -134,95 +189,14 @@ Edemy LMS is a full-stack learning management system (LMS) that provides educato
 
 ![image](https://github.com/user-attachments/assets/6eb66c29-6a73-4f98-9c15-7625a903a109)
 
-
-
-
-
-
-
-## ⚡ Installation & Setup
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/Gyanthakur/Edemy-LMS.git
-cd edemy-lms
-```
-
-### 2️⃣ Install Dependencies
-
-#### Frontend:
-```bash
-cd client
-npm install
-npm run dev
-```
-
-#### Backend:
-```bash
-cd server
-npm install
-npm start
-```
-
-### 3️⃣ Setup Environment Variables
-Create a `.env` file in both `client/` and `server/` directories and add required credentials (MongoDB, Cloudinary, Clerk, Stripe, etc.).
-
----
-
-## 🔥 Deployment
-
-This project is set up for deployment on **Vercel**.
-
-### Deploy Backend
-```bash
-cd server
-vercel --prod
-```
-
-### Deploy Frontend
-```bash
-cd client
-vercel --prod
-```
-
----
-
-## 🔐 License
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## 🎯 Contributors
 
-👤 **Gyan Pratap Singh** – *Developer & Maintainer*  
-📧 Contact: [gps.96169@gmail.com](mailto:gps.96169@gmail.com)  
+👤 **Nikhil Lad** – *Developer & Maintainer*  
+📧 Contact: [nikhil.lad24india@gmail.com](nikhil.lad24india@gmail.com)  
 🔗 GitHub: [@gyanthakur](https://github.com/Gyanthakur)  
 
-
-## 🌐 Connect with Us
-
-Contact Us:  📲<a href="https://wa.me/918957818597?text=Hey%20%F0%9F%91%8B%2C%20how%20can%20I%20help%20you%3F">
-    <img src="https://img.shields.io/badge/WhatsApp-Click%20Me-25D366?style=for-the-badge&logo=whatsapp" alt="WhatsApp" />
-  </a>
-
-- **Name**: Gyan Pratap Singh
-- **Email**: [gps.96169@gmail.com](mailto:gps.96169@gmail.com)
-- **GitHub**: [Gyanthakur](https://github.com/Gyanthakur)
-- **Portfolio**: [Gyan's Portfolio](https://gyan-pratap-singh.vercel.app/)
-
 ---
-
-
 
 ## Thank you for checking out the **Edemy LMS** project! Happy coding! 😊
 
 ---
-## ⭐ Support
-Give a ⭐ if you like this project!
-
----
-Made with ❤️ by Gyan Pratap Singh
-
-### ⭐ Show Some Love!
-
-If you like this project, don't forget to leave a **⭐ Star** on GitHub! 🚀
