@@ -178,7 +178,7 @@ Edemy LMS is a full-stack learning management system (LMS) that provides educato
 
 ## 📽️ Demo Video
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](VIDEO_LINK_HERE)
+https://github.com/user-attachments/assets/e98b8d5c-8dbb-494d-a6dc-27c0fea90aaf
 
 ---
 
