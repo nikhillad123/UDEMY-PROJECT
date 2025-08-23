@@ -200,7 +200,7 @@ Edemy LMS is a full-stack learning management system (LMS) that provides educato
 ## 🎯 Contributors
 
 👤 **Nikhil Lad** – *Developer & Maintainer*  
-📧 Contact: [nikhil.lad24india@gmail.com](nikhil.lad24india@gmail.com)  
+📧 Contact: [nikhil.lad24india@gmail.com](nikhil.lad194@gmail.com)  
 🔗 GitHub: [@nikhillad](https://github.com/Gyanthakur)  
 
 ---
